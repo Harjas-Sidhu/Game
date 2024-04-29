@@ -1,0 +1,18 @@
+<div id="container">
+    <canvas id="backgroundScene"></canvas>
+    <form id="loginForm" [formGroup]="loginForm" (ngSubmit)="onSubmit($event)">
+        <h1>Login</h1>
+        <div class="form-group">
+            <input type="email" formControlName="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <input type="password" formControlName="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <button type="submit" id="loginButton">Login</button>
+    </form>
+    <button id="backgroundMusic" (click)="togglePlay()">
+        <audio loop id="audio" autoplay>
+            <source src="../../../assets/sounds/BackgroundMusic/summer nights.ogg" />
+        </audio>
+    </button>
+</div>

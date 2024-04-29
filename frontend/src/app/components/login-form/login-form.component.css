@@ -1,0 +1,36 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    line-height: 1.5;
+    z-index: 1;
+    position: relative;
+}
+
+#loginForm {
+    width: 23%;
+    height: 60%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#backgroundMusic {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 4;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #212121;
+}
